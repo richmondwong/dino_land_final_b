@@ -31,7 +31,10 @@ MongoClient.connect(MONGODB_URI, (err,db) => {
   }
   // console.log(`successfully connected to DB: ${MONGODB_URI}`);
   var gameRecord = db.db("fgame")
-
+  gameRecord.collection('highRanking').insertOne({player: "Anthony", score: 200} , function(err, res) {
+         if (err) throw err;
+           console.log("player score saved")
+         })
   gameRecord.createCollection('highRanking', function(err, res) {
   if (err) throw err;
     console.log("The collection created!");
@@ -47,6 +50,7 @@ MongoClient.connect(MONGODB_URI, (err,db) => {
 
   app.get("/newgame", (req, res) => {
     playerData = {};
+    userAction = {};
     playerCount = 1;
     res.render('newgame');
   })

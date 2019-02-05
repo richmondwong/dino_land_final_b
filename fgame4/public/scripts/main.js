@@ -349,14 +349,14 @@ var platform1 = this.game.add.sprite(1152,867, 'fifteen');
   totalHealthBar.fixedToCamera = true
   currentHealthStatus = this.game.add.image(100, 20, 'health_green')
   currentHealthStatus.fixedToCamera = true
-  var healthText = this.game.add.text(10, 20, `${action[2].name.slice(0, 6)}: `, {fontSize: '20px', fill: '#ffffff'})
+  var healthText = this.game.add.text(10, 20, `${action[2].name.slice(0, 4)}: `, {fontSize: '20px', fill: '#ffffff'})
   healthText.fixedToCamera = true
 
   var totalHealthBar1 = this.game.add.image(425, 20, 'health_red')
   totalHealthBar1.fixedToCamera = true
   currentHealthStatus1 = this.game.add.image(425, 20, 'health_green')
   currentHealthStatus1.fixedToCamera = true
-  var healthText1 = this.game.add.text(335, 20, `${action[1].name.slice(0, 6)}: `, {fontSize: '20px', fill: '#ffffff'})
+  var healthText1 = this.game.add.text(335, 20, `${action[1].name.slice(0, 4)}: `, {fontSize: '20px', fill: '#ffffff'})
   healthText1.fixedToCamera = true
 
     //Player 3 + 4
@@ -364,14 +364,14 @@ var platform1 = this.game.add.sprite(1152,867, 'fifteen');
   totalHealthBar2.fixedToCamera = true
   currentHealthStatus2 = this.game.add.image(750, 20, 'health_green')
   currentHealthStatus2.fixedToCamera = true
-  var healthText2 = this.game.add.text(660, 20, `${action[3].name.slice(0, 6)}: `, {fontSize: '20px', fill: '#ffffff'})
+  var healthText2 = this.game.add.text(660, 20, `${action[3].name.slice(0, 4)}: `, {fontSize: '20px', fill: '#ffffff'})
   healthText2.fixedToCamera = true
 
   var totalHealthBar3 = this.game.add.image(1070, 20, 'health_red')
   totalHealthBar3.fixedToCamera = true
   currentHealthStatus3 = this.game.add.image(1070, 20, 'health_green')
   currentHealthStatus3.fixedToCamera = true
-  var healthText3 = this.game.add.text(980, 20, `${action[4].name.slice(0, 6)}: `, {fontSize: '20px', fill: '#ffffff'})
+  var healthText3 = this.game.add.text(980, 20, `${action[4].name.slice(0, 4)}: `, {fontSize: '20px', fill: '#ffffff'})
   healthText3.fixedToCamera = true
 
 
